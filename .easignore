@@ -1,0 +1,16 @@
+.idea/
+.expo/*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+/builds/
+/dist/
+/Makefile
+/README.md
+/.editorconfig
+/.gitignore
+/.Dockerfile
+/.editorconfig

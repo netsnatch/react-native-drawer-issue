@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+  node:
+    build:
+      context: .
+      dockerfile: .Dockerfile
+    restart: unless-stopped
+    tty: true
+    logging:
+      driver: json-file
+      options:
+        max-file: "1"
+        max-size: "20m"
+    ports:
+      - "19002:19002"
+      - "19001:19001"
+      - "19000:19000"
+      - "8097:8097"
+    working_dir: /app
+    command: ["/bin/sh", "-c", "trap : TERM INT; (while true; do sleep 1000; done) & wait"]
+    volumes:
+      - .:/app

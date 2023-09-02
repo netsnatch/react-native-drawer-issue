@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "DrawerIssue",
+    "slug": "drawerissue",
+    "scheme": "drawerissue",
+    "version": "1.0.0",
+    "privacy": "hidden",
+    "splash": {
+      "backgroundColor": "#000000"
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "userInterfaceStyle": "automatic",
+    "jsEngine": "hermes",
+    "android": {
+      "userInterfaceStyle": "automatic",
+      "permissions": []
+    },
+    "plugins": [
+      "expo-localization"
+    ]
+  }
+}
